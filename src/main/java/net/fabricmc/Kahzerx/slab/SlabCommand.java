@@ -20,6 +20,7 @@ public class SlabCommand {
         if (Slab.isSlab(src.getPlayer().inventory.getMainHandStack().getItem())){
             if (!src.getPlayer().inventory.getMainHandStack().hasEnchantments()) {
                 src.getPlayer().inventory.getMainHandStack().setCustomName(new LiteralText("§b§o§lUpside Down slab")).addEnchantment(SlabEnchantment.SLAB, 0);
+                src.sendFeedback(new LiteralText("Slab!"), false);
             }
         }
         return 1;

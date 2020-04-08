@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(CommandManager.class)
-public class CommandManagerMixin {
+public class SlabCommandManagerMixin {
     @Shadow @Final private CommandDispatcher<ServerCommandSource> dispatcher;
     @Inject(at = @At("RETURN"), method = "<init>")
     private void register(boolean boolean_1, CallbackInfo ci){

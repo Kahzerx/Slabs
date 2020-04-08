@@ -4,10 +4,12 @@
   "package": "net.fabricmc.Kahzerx.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CommandManagerMixin",
+    "SlabCommandManagerMixin",
     "SlabPlacedMixin"
   ],
   "client": [
+  ],
+  "server": [
   ],
   "injectors": {
     "defaultRequire": 1
