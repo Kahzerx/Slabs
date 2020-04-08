@@ -1,6 +1,6 @@
 # Slabs
 
-Mod to automatically place upside down slabs
+Fabric mod to automatically place upside down slabs
 
 ## Commands
 
