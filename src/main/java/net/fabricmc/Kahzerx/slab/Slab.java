@@ -14,6 +14,6 @@ public class Slab {
     }
 
     public static void flipSlab(World world, BlockPos pos, BlockState state){
-        world.setBlockState(pos, state.with(SlabBlock.TYPE, SlabType.TOP));
+        world.setBlockState(pos, state.with(SlabBlock.TYPE, world.getBlockState(pos).get(SlabBlock.TYPE) == SlabType.DOUBLE ? SlabType.DOUBLE : SlabType.TOP));
     }
 }
