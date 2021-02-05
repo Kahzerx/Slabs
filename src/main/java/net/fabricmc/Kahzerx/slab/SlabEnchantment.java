@@ -13,11 +13,11 @@ public class SlabEnchantment extends Enchantment {
         super(weight, type, slotTypes);
     }
 
-    private static Enchantment register(String string, Enchantment enchantment) {
-        return (Enchantment) Registry.register(Registry.ENCHANTMENT, string, enchantment);
+    private static Enchantment register(Enchantment enchantment) {
+        return Registry.register(Registry.ENCHANTMENT, "slab", enchantment);
     }
 
     static {
-        SLAB = register("slab", new SlabEnchantment(Enchantment.Weight.COMMON, EnchantmentTarget.ALL, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
+        SLAB = register(new SlabEnchantment(Enchantment.Weight.COMMON, EnchantmentTarget.ALL, new EquipmentSlot[]{EquipmentSlot.MAINHAND}));
     }
 }
